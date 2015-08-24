@@ -1,0 +1,331 @@
+/* RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ---- MON CSS ---- */
+
+body { 
+	font-family: Helvetica, sans-serif; 
+	background-image: url('images/cloud.jpg');
+}
+
+h1 {
+	font-size: 4em;
+	font-weight: bold;
+	color: black;
+	text-align: center;
+	margin: 30px 0;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.marg {
+	width: 950px;
+	margin: auto;
+}
+
+.clear { clear: both; }
+
+@font-face{
+	font-family : "mayBe";
+	src : url('fonts/Maybe_Not.ttf');
+}
+
+nav {
+	background-color: black;
+	text-align: center;
+	padding: 15px 0;
+}
+
+nav	li {
+	display: inline-block;
+	color: grey;
+	min-height: 20px;
+}
+
+nav, nav a { 
+	color: grey; 
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+nav a {
+	display: inline-block;
+	padding-top: 5px;
+}
+
+nav ul:nth-child(1) > li:nth-child(1) > a:nth-child(1) {
+	background: url('images/home.png') no-repeat;
+	background-size: 50%;
+	background-position: center;
+	color: transparent;
+	margin-right: 20px;
+}
+
+.nav {
+	margin-right: 50px;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+.adm { color: purple; }
+
+/* ------ INDEX ------ */
+.title {
+	margin: 50px 0 10px 0;
+}
+.title h1 {
+	margin: 70px 0;
+	font-family: "mayBe", sans-serif;
+}
+.addPost {
+	color: black;
+	background-color: white;
+	border: 1px black solid;
+	border-radius: 5px;
+	padding: 5px;
+}
+#bloc_center {
+	padding: 10px;
+	margin: 10px auto;
+}
+#bloc_center a {
+	color: black;
+}
+#tagSearch {
+	float: 	right;
+	max-width: 50%;
+}
+#noResult {
+	/*margin: 10px 0;*/
+	padding: 20px 5px;
+	text-align: center;
+	border-radius: 10px;
+	background-color: grey;
+}
+#noResult p { 
+	font-size: 1.4em;
+	margin-bottom: 30px;
+}
+
+#noResult a:hover, .addPost:hover {
+	text-decoration: underline;
+}
+
+.result {
+	border: 1px black dashed;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+.result h2, .content, .tagsPost, .footerBlog, #postCom { padding: 10px; }
+
+.result h2, .content, .tagsPost, #postCom { background-color: white; }
+
+.result h2 {
+	font-size: 1.4em;
+	border-radius: 10px 10px 0 0;
+}
+.more {
+	margin-left: 10px;
+	text-decoration: underline;
+	font-style: italic;
+}
+
+.video {
+	background-color: RGBA(255, 255, 255, 0.5);
+	text-align: center;
+	padding: 10px 0;
+}
+.tagsPost p { float: left; }
+
+.tagsPost span {
+	margin: 0 5px;
+	font-size: 0.9em;
+}
+
+.footerBlog {
+	position: relative;
+	border-radius: 0px 0px 10px 10px;
+	background-color: #a1a1a1;
+	color: white;
+	width: initial;
+}
+
+.footerBlog p { 
+	max-width: 30%;
+	display: inline;
+	margin-right: 10px;
+}
+
+.bouton {
+	display: inline-block;
+	margin-top: 10px;
+	border-radius: 4px;
+	padding: 0 10px;
+	font-size: 0.9em;
+	background-color: #D1D1D1;
+	border: 1px outset #D1D1D1;
+}
+
+/* ------ FOOTER ------ */
+footer, #footer { 
+	width: 100%;
+	padding: 20px 0;
+	background-color: #000;
+	color: #808080;
+	line-height: 25px;
+	/*position: absolute;
+	bottom: 0;*/
+}
+
+#footer section {
+	width: 40%;
+}
+#contact { float: left;}
+#about { float: right; }
+
+#footer section header {
+	text-align: center;
+	margin: 0 0 20px 0;
+	font-size: 1.4em;
+}
+
+#contact input, #contact textarea:nth-child(2) {
+	display: block;
+	width: 200px;
+	margin: 0px auto 30px;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+}
+
+/* ------ PAGINATION ------ */
+.pagination form { 
+	text-align: center; 
+	margin-bottom: 10px;
+}
+.pagination label {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.next { float: right; }
+.previous { float: left;}
+
+/* ------ ADMINISTRATION ------ */
+.exclu 
+{
+	text-align: center;
+	border-radius: 10px;
+	padding: 20px;
+	background-color: grey;
+	color: white;
+	font-weight: bold;
+}
+
+#bloc_center_large {
+	/*padding: 10px 20px;*/
+	text-align: center;
+}
+
+.admSection {
+	display: inline-block;
+	vertical-align: top;
+	width: 25%;
+	margin: 0 5px;
+	border: 1px black dashed;
+	border-radius: 20px;
+	padding: 10px;
+	
+	background-color: rgba(240, 128, 128, 0.5);
+	background-color: rgba(147, 112, 219, 0.7);
+	/*background-color: rgba(128, 0, 128, 0.5);*/
+}
+
+#bloc_center_large section header {
+	padding: 5px 0;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-bottom: 20px;
+	border-bottom: 1px black dashed;
+}
+
+.admSection form {
+
+}
+.admSection form input {
+	border-radius: 5px;
+	text-align: center;
+}
+
+.admSection p { margin-bottom: 20px; }
+
+#tabResultat {
+	margin: 20px auto 10px;
+	width: 100%;
+	text-align: center;
+	background-color: white;
+}
+
+#tabResultat th, #tabResultat td {
+	border: 1px black solid;
+	padding: 15px;
+}
+.searchMember label {
+	font-weight: bold
+}
+.searchMember input {
+	margin: 10px 0;
+}
+
+#publier { /*bouton publier sur page post*/
+	color: red;
+	font-weight: bold;
+}

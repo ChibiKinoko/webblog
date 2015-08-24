@@ -1,0 +1,51 @@
+input, textarea {
+	margin: 5px 0;
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px grey solid;
+}
+
+label { font-size: 0.9em; }
+
+#postCom {
+	margin-top: 10px;
+	border-radius: 15px;
+	border: 1px grey solid;
+}
+#postCom header {
+	margin-bottom: 10px;
+	font-size: 1.1em;
+}
+
+#commentaire header, #commentaire form {
+	padding: 0;
+}
+textarea { 
+	display: block; 
+	width: 95%;
+}
+
+.unCom {
+	border: 1px black dotted;
+	border-radius: 20px;
+	padding: 10px 10px 10px 15px;
+	background-color: white;
+	margin: 10px 0;
+}
+
+.unCom header {
+	font-size: 1.1em;
+	padding-left: 10px;
+}
+.unCom span {
+	font-size: 0.7em;
+	margin-left: 10px;
+}
+
+.comContent {
+	margin: 5px 0;
+	padding: 10px;
+	background-color: #c3c3c3;
+	color: black;
+	border-radius: 10px;
+}
